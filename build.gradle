@@ -13,7 +13,11 @@ dependencies {
     implementation 'io.quarkus:quarkus-messaging'
     implementation 'io.quarkus:quarkus-smallrye-context-propagation'
     implementation 'io.quarkus:quarkus-arc'
+    implementation 'io.smallrye.reactive:smallrye-reactive-messaging-jms:4.27.0'
+    implementation 'jakarta.jms:jakarta.jms-api:3.1.0'
+
     testImplementation 'io.quarkus:quarkus-junit5'
+    testImplementation("io.smallrye.reactive:smallrye-reactive-messaging-in-memory:4.27.0")
 }
 
 group 'dk.itveen'
